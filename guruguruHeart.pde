@@ -22,7 +22,7 @@ void setup() {
   frameRate(360);
   size(800, 800);
 
-  background(#f0f0f0);
+  background(#e9e9e9);
   noStroke();
 
   PVector center = new PVector(width/2, height/2);
@@ -160,7 +160,7 @@ PVector calcMidPoint(PVector end1, PVector end2) {
 void keyPressed() {
   if (key == 's' || key == 'S')saveFrame(timestamp()+"_####.png");
   if (key == ' ' ) { //ぐにゃぐにゃ
-    fill(#f0f0f0);
+    fill(#e9e9e9);
     rect(0, 0, width, height);
     vc = 0;
     b = true;
@@ -168,7 +168,7 @@ void keyPressed() {
     Pos.set(vertex[vc].x, vertex[vc].y);
   }
   if (key == 'R' || key == 'r') { //再描画
-    fill(#f0f0f0);
+    fill(#e9e9e9);
     rect(0, 0, width, height);
     vc = 0;
     b = true;
